@@ -18,7 +18,7 @@ public class DefaultController {
     @GetMapping("/hello")
     public String hello() {
         log.info("service02 is being called");
-        return "Hello from service01 running at port: " + environment.getProperty("local.server.port");
+        return "Hello from service02 running at port: " + environment.getProperty("local.server.port");
     }
 
 }
